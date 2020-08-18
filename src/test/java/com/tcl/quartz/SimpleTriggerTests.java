@@ -19,7 +19,7 @@ import static org.quartz.DateBuilder.*;
  * @version 1.0
  * @date 2020/8/18 13:50
  */
-public class TriggerTests {
+public class SimpleTriggerTests {
 
     Scheduler scheduler;
     JobDetail job;
