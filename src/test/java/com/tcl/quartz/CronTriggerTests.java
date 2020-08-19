@@ -42,7 +42,7 @@ public class CronTriggerTests {
 
     @Test
     void everyEvenSecondTest() throws SchedulerException, InterruptedException {
-        Trigger trigger = newTrigger().withIdentity("trigger1", "group")
+        Trigger trigger = newTrigger().withIdentity("cron-trigger1", "cron-group")
                 .withSchedule(
                     cronSchedule("0 0/2 9-18 * * ?")
                 )
