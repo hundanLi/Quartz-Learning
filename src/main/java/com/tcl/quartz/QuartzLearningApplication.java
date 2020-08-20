@@ -2,8 +2,12 @@ package com.tcl.quartz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
+/**
+ * @author hundanli
+ */
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class QuartzLearningApplication {
 
     public static void main(String[] args) {
