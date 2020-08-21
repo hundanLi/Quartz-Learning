@@ -23,7 +23,7 @@ import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
  * @version 1.0
  * @date 2020/8/19 13:39
  */
-@Configuration
+//@Configuration
 public class QuartzConfig {
 
     @Bean

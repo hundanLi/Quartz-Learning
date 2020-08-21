@@ -1,3 +1,16 @@
 logging:
   level:
     root: info
+
+
+spring:
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      schema: classpath:/tables_mysql_innodb.sql  # 数据库初始化脚本
+      initialize-schema: always # 数据库初始化策略
+    scheduler-name: QuartzScheduler
+  datasource:
+    url: jdbc:mysql://localhost:3306/quartz_learning?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
